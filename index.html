@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+
+    body, html {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: rgba(120, 22, 41, 0.9);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 700;
+    
+    }
+
+    header .logo {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500
+
+    }
+    .container {
+      position: relative;
+      max-width: 900px;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .image-background {
+      width: 70%;
+      border-radius: 12px;
+    }
+    .text-overlay {
+      position: absolute;
+      top: 10%;
+      left: 0%;
+      color: rgb(153, 29, 29);
+    }
+    .text-overlay h1 {
+      font-size: 6rem;
+      line-height: 1;
+      margin: 0;
+    }
+    .text-overlay h1 span {
+      display: block;
+    }
+    .text-overlay p {
+      font-size: 1.2rem;
+      
+    }
+
+    .commission-button {
+      display: inline-block;
+      padding: 10px 15px;
+      border: 2px solid #641010; 
+      border-radius: 25px;
+      background-color: #f2f2f2; 
+      color: #641010;
+      font-size: 13px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .commission-button:hover {
+      background-color: #641010;
+      color: white;
+    }
+
+    .parallax-section {
+      background-image: url('ger.jpg');
+      height: 200px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .parallax-section {
+      background-image: url('https://images.wallpapersden.com/image/download/minimalist-landscape-painting_a2xmaGuUmZqaraWkpJRmbmdlrWZlbWU.jpg');
+      height: 200px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    #works {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .featured-images {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .featured-images img {
+      width: 250px;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 8px;
+      border-style: solid;
+      border-color: brown;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .works{
+      width: 150px;
+      height: 180px;
+    }
+
+    #contacts {
+      padding: 4rem 2rem;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .contact-images {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-images img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(153, 38, 38, 0.5);
+    }
+
+
+    nav a:hover {
+      color: #4bc0ff;
+     
+    }
+    
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">faiburii</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#works">Works</a>
+      <a href="#contacts">Contacts</a>
+    
+    </nav>
+  </header>
+
+  <div class="container" id="home">
+    <img src="heel.png" alt="Portfolio Cover" class="image-background" />
+    <div class="text-overlay">
+      <h1>
+        <span>PORT</span>
+        <span>FOLIO</span> </h1>
+     
+        <H2>LASCONA L.</H2>
+      <p>an Illustrator <br>and a Graphic Designer</p>
+
+       <a href="tos.html" class="commission-button"target="_blank>">COMMISSION ME NOW</a>
+
+    </div>
+  </div>
+  <div class="parallax-section">Featured Works</div>
+
+  <section id="works">
+    <h2>COLORED</h2>
+    <div class="featured-images 1">
+      <img src="bom.jpg" alt="Work 1">
+      <img src="shell.jpg" alt="Work 2">
+      <img src="mak.JPG" alt="Work 3">
+    </div>
+
+<br>
+<br>
+<br>
+<hr>
+    <section id="works">
+    <h2>Collab Works</h2>
+    <div class="featured-images 2">
+      <img src="aaa.png" alt="Work 1">
+      <img src="2025 art  collab (1base 2artists) with cie.png" alt="Work 2">
+     
+    </div>
+  </section>
+
+  <br>
+<br>
+<br>
+<hr>
+    <section id="works">
+    <h2>SKETCH</h2>
+    <div class="featured-images 2">
+      <img src="katara.jpg" alt="Work 1">
+      <img src="freya.jpg" alt="Work 2">
+      <img src="danda.jpg" alt="Work 3">
+      <img src="lola.jpg" alt="Work 4">
+    </div>
+  </section>
+
+<br>
+<br>
+  <div class="parallax-section 1">Contacts</div>
+
+  <section id="contacts">
+    <h2>Follow Me</h2>
+    <div class="contact-images">
+      <a href="https://www.facebook.com/profile.php?id=100004200219448" target="_blank>">
+          <img src="fb.png" alt=""></a>
+      <a href="https://www.instagram.com/faiburiii/" target="_blank>">
+          <img src="insta.png" alt=""></a>
+      <a href="https://x.com/d2122r110702" target="_blank>">
+          <img src="xxx.png" alt=""></a>
+    
+    
+    </div>
+  </section>
+
+        
+        
+
+    </div>
+
+
+</body>
+</html>

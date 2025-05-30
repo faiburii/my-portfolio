@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TOS</title>
+  <style>
+
+    html {
+  scroll-behavior: smooth;
+}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background-color: #000;
+    }
+
+    header {
+      background: url('shark.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: white;
+      position: absolute;
+      bottom: 20px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 40px;
+    }
+
+    .main-text {
+      width: 65%;
+      background: #222;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .main-text h2 {
+      font-size: 2.5em;
+    }
+
+    .main-text p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .main-text a {
+      color: #ccc;
+      text-decoration: underline;
+    }
+
+    .sidebar {
+      width: 25%;
+      padding: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: underline;
+      font-weight: bold;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+  
+    .services {
+      padding: 40px;
+      background-color: #111;
+    }
+
+    .services h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+    }
+
+    .service {
+      background-color: #222;
+      border-radius: 10px;
+      padding: 10px;
+      width: 350px;
+      text-align: center;
+    }
+
+    .service img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    @media screen and (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .main-text, .sidebar {
+        width: 100%;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+
+      .service-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .tos {
+     padding: 40px;
+     background-color: #000;
+     border-top: 1px solid #333;
+    }
+
+    .tos h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    }
+
+    .tos-content {
+     max-width: 900px;
+     margin: 0 auto;
+     font-size: 1.1em;
+     line-height: 1.8;
+     color: #ccc;
+    }
+
+    .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+  </style>
+
+
+</head>
+<body>
+
+  <header>
+    <h1>Faiburii | Commission</h1>
+  </header>
+
+ <nav>
+  <a href="#">Home</a>
+  <a href="#gallery">Gallery</a>
+</nav>
+
+  <div class="content">
+    <div class="main-text">
+      <h2>Commission</h2>
+      <p>By commissioning me, you must first agree to the Terms of service</a>.</p>
+      <p>To commission me, please send me the Order form</a> on my email (<a href="mailto:riifaibu@gmail.com">riifaibu@gmail.com</a>).</p>
+    </div>
+
+    <div class="sidebar">
+      <a href="#services">SERVICES</a>
+      <a href="#tos">Term Of Service</a>
+      <a href="#order-form">ORDER FORM</a>
+    </div>
+  </div>
+
+ <section id="services" class="services">
+    <h2>Services</h2>
+    <div class="service-list">
+      <div class="service">
+        <img src="freya.jpg" alt="Character Portrait">
+        <h3><strong> LINEWORK </strong></h3>
+        <p> Headshot $25</p>
+        <p> Bust $35</p>
+        <p> Full body $45</p> <br>
+        <p> Simple line art with no background. <br>
+            It will take 1 to 5 weeks to complete.</p>
+      </div>
+
+      <div class="service">
+        <img src="filay.jpg" alt="Illustration">
+        <h3>Chibi</h3>
+        <p>...</p>
+      </div>
+
+      <div class="service">
+        <img src="mak.JPG" alt="Chibi Art">
+        <h3>Fully Rendered</h3>
+        <p> Headshot $45</p>
+        <p> Bust $50</p>
+        <p> Full body $100</p> <br>
+        <p> Bust illustration that is fully rendered and styled 
+            It will take 2 to 4 months to complete. <br>
+           +20 for intricate background</p>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="gallery" class="gallery-section" style="padding: 40px; background-color: #111; color: #fff;">
+  <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 30px;">Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="mak.JPG" alt="Artwork 1">
+    </div>
+    <div class="gallery-item">
+      <img src="bom.jpg" alt="Artwork 2">
+    </div>
+    <div class="gallery-item">
+      <img src="rie.jpg" alt="Artwork 3">
+    </div>
+    <div class="gallery-item">
+      <img src="shell.jpg" alt="Artwork 4">
+    </div>
+  </div>
+</section>
+
+
+  <section id="tos" class="tos">
+  <h2>Terms of Service</h2>
+  <div class="tos-content">
+    <p>Please ensure you’ve read my Terms of Service before placing an order. These terms are intended for private commissions only and do not apply to commercial projects. As such, the artwork is strictly for personal use by the client.
+    The listed prices are base rates. Additional charges may apply based on factors such as intricate character designs, multiple characters, lack of clear visual references, detailed backgrounds, or overall image complexity.</p>
+
+  <p><strong>HOW TO ORDER:</strong><br>
+    ➥ Your email address<br>
+    ➥ Type of commission (e.g., Bust Linework)<br>
+    ➥ Character name, personality, and description<br>
+    ➥ Reference images (required); pose ideas and background inspiration (optional)<br>
+    ➥ Specific details or requests<br>
+    ➥ Background preference</p>
+
+    <p><strong>DO's & DON'Ts</strong><br>
+    ✓ will do: <br>
+    ➥ Humans, creatures, portraits, couples (any gender), fanart, original characters<br>
+    <br>
+    ✗ Won't do:<br>
+    ➥ Fetishes, hateful content, art style imitations<br>
+    </p>
+
+    <p><strong>GENERAL TERMS</strong><br>
+    ➥ All artwork will include a subtle signature.<br>
+    ➥ May record and share the drawing process.<br>
+    ➥ Prices may vary with demand or complexity.<br>
+    ➥ Right to decline commissions.<br>
+    ➥ Adding another character doubles the price.<br>
+
+
+    <p><strong>MODE OF PAYMENT</strong><br>
+    ➥ USD via PayPal<br>
+    ➥ Paymaya/ Gcash for locals<br>
+    ➥ Hald down payment required after or before sketch approval<br> 
+
+
+    <p><strong>COPYRIGHT AND USAGE</strong><br>
+    ➥ Artist (Faiburii) retains full rights to the artwork<br>
+    ➥ Art may be used for self-promotion and displayed publicly<br>
+
+    <p><strong>COMMERCIAL USE</strong><br>
+    ➥ Commercial use costs 2× the base price<br>
+
+
+    <p><strong>CACELLATION POLICY</strong><br>
+    ➥ Full refund if canceled before work starts<br>
+    ➥ No refund once the commission is in progress<br>
+    ➥ Full refund if the artist is unable to start the project<br>
+</p>
+  </div>
+</section>
+
+
+
+<section id="order-form" class="order-form" style="padding: 40px; background-color: #000000; color: #ccc;">
+  <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 30px;">Order Form</h2>
+  <form action="mailto:riifaibu@gmail.com" method="POST" enctype="text/plain" style="max-width: 700px; margin: 0 auto;">
+    
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+    <label for="type">Type of Commission:</label><br>
+    <input type="text" id="type" name="type" placeholder="e.g., Bust Linework" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+    <label for="character">Character Name and Description:</label><br>
+    <textarea id="character" name="character" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea><br>
+
+    <label for="references">Reference Image Links:</label><br>
+    <input type="text" id="references" name="references" placeholder="Paste image URLs" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+    <label for="details">Pose Ideas / Specific Requests:</label><br>
+    <textarea id="details" name="details" rows="4" style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea><br>
+
+    <label for="background">Background Preference:</label><br>
+    <input type="text" id="background" name="background" style="width: 100%; padding: 10px; margin-bottom: 25px;"><br>
+
+    <label for="background">Visuals/images/references(Optional):</label><br>
+    <input type="text" id="background" name="background" style="width: 100%; padding: 10px; margin-bottom: 25px;"><br>
+
+    <input type="submit" value="Submit Order" style="padding: 12px 25px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
+  </form>
+</section>
+
+
+
+
+</body>
+</html>
